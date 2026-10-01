@@ -12,11 +12,14 @@
     content="Spac2 Services, business email, lifetime email, web design, web development, PWA, spac2.com" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="language" content="en" />
-  <meta name="author" content="Spac2 Enterprise" />
+  <meta name="author" content="Spac2" />
+  <meta name="google" content="notranslate" />
   <meta name="theme-color" content="#09090b" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Spac2 Services" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="Spac2 Services" />
 
   <!-- 2. Canonical & Alternates -->
   <link rel="canonical" href="https://service.spac2.com/" />
@@ -27,12 +30,13 @@
 
   <!-- 3. Open Graph / Social Sharing -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Spac2 Services" />
+  <meta property="og:site_name" content="Spac2" />
   <meta property="og:title" content="Spac2 Services | Technology &amp; Enterprise Solutions" />
   <meta property="og:description"
     content="This is the service portal for you, businesses, and third-party users. Explore the standard services we provide." />
   <meta property="og:url" content="https://service.spac2.com/" />
   <meta property="og:image" content="https://spac2.com/media/thumbnail.png" />
+  <meta property="og:image:alt" content="Spac2 | Operating System Web OS" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="en_US" />
@@ -40,19 +44,20 @@
   <!-- 4. Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@spac2com" />
+  <meta name="twitter:creator" content="@spac2com" />
   <meta name="twitter:title" content="Spac2 Services | Standard Technology Solutions" />
   <meta name="twitter:description"
     content="This is the service portal for you, businesses, and third-party users. Below are the standard services we provide." />
   <meta name="twitter:image" content="https://spac2.com/media/thumbnail.png" />
 
   <!-- 5. Favicons & Brand Icons -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
-  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="manifest" href="/manifests/main.json?v=58" />
+  <link rel="icon" type="image/x-icon" href="https://spac2.com/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://spac2.com/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://spac2.com/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://spac2.com/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="https://spac2.com/android-chrome-512x512.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://spac2.com/apple-touch-icon.png" />
+  <link rel="manifest" href="https://spac2.com/manifests/main.json?v=58" />
 
   <!-- 6. Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -64,7 +69,8 @@
   <!-- 7. Stylesheet -->
   <link rel="stylesheet" href="data/css/service.css" />
 
-  <!-- 8. Analytics -->
+  <!-- 8. Analytics & Measurement -->
+  <meta name="google-adsense-account" content="ca-pub-1722731267767270" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1722731267767270"
     crossorigin="anonymous"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JCMEMFLZ14"></script>
@@ -80,16 +86,38 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Spac2 Services Center",
-    "url": "https://service.spac2.com/",
-    "description": "Standard technology services from Spac2 ecosystem: Lifetime Business Email and Custom Website Design & Development.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Spac2",
-      "url": "https://spac2.com/",
-      "logo": "https://spac2.com/apple-touch-icon.png"
-    }
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Spac2 Home",
+            "item": "https://spac2.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Spac2 Services",
+            "item": "https://service.spac2.com/"
+          }
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://service.spac2.com/#webpage",
+        "name": "Spac2 Services Center",
+        "url": "https://service.spac2.com/",
+        "description": "Standard technology services from Spac2 ecosystem: Lifetime Business Email and Custom Website Design & Development.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Spac2",
+          "url": "https://spac2.com/",
+          "logo": "https://spac2.com/apple-touch-icon.png"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -116,7 +144,7 @@
 
         <a href="/" class="brand-link" title="Spac2 Services">
           <div class="brand-logo-card">
-            <img src="/apple-touch-icon.png" alt="Spac2 Logo" class="brand-logo-img"
+            <img src="https://spac2.com/apple-touch-icon.png" alt="Spac2 Logo" class="brand-logo-img"
               onerror="this.src='https://spac2.com/favicon.ico'" />
           </div>
           <div class="brand-text">
