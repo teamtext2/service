@@ -380,6 +380,8 @@ body {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .app-service-card::after {

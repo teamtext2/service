@@ -159,8 +159,9 @@ function renderServicesList() {
 
   grid.innerHTML = services.map(svc => {
     const svgIcon = getServiceSvg(svc.img);
+    const targetUrl = svc.detailUrl || svc.link || '#';
     return `
-      <article class="app-service-card" onclick="openServiceDetail('${svc.id}')">
+      <a href="${targetUrl}" class="app-service-card" style="text-decoration:none; color:inherit;">
         <div>
           <div class="card-top-row">
             <div class="card-svg-icon" aria-hidden="true">
@@ -186,76 +187,28 @@ function renderServicesList() {
 
         <div class="card-bottom-row">
           <span class="card-price-tag">${svc.price || 'Contact us'}</span>
-          <button type="button" class="btn-card-action" onclick="event.stopPropagation(); openServiceDetail('${svc.id}')">
+          <span class="btn-card-action">
             <span>Details</span>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="9 18 15 12 9 6"></polyline>
             </svg>
-          </button>
+          </span>
         </div>
-      </article>
+      </a>
     `;
   }).join('');
 }
 
-// Open Service Detail Modal
+// Open Service Detail (Direct Navigation fallback)
 function openServiceDetail(serviceId) {
   if (typeof SPAC2_SERVICES === 'undefined') return;
   const svc = SPAC2_SERVICES.find(s => s.id === serviceId);
   if (!svc) return;
 
-  const svgIcon = getServiceSvg(svc.img);
-
-  document.getElementById('modalTitle').textContent = svc.title;
-  document.getElementById('modalPrice').textContent = svc.price || 'Contact for quotation';
-  document.getElementById('modalDesc').textContent = svc.desc;
-  document.getElementById('modalIcon').innerHTML = svgIcon;
-
-  const linkBtn = document.getElementById('modalDirectLink');
-  if (linkBtn) {
-    linkBtn.href = svc.link || `mailto:hi@spac2.com?subject=Inquiry%20${encodeURIComponent(svc.title)}`;
-  }
-
-  const detailBtn = document.getElementById('modalDetailPageLink');
-  if (detailBtn) {
-    if (svc.detailUrl) {
-      detailBtn.href = svc.detailUrl;
-      detailBtn.style.display = 'inline-flex';
-    } else {
-      detailBtn.style.display = 'none';
-    }
-  }
-
-  const featuresContainer = document.getElementById('modalFeatures');
-  if (featuresContainer) {
-    featuresContainer.innerHTML = (svc.features || []).map(f => `
-      <li class="modal-feature-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="20 6 9 17 4 12"></polyline>
-        </svg>
-        <span>${f}</span>
-      </li>
-    `).join('');
-  }
-
-  const modal = document.getElementById('serviceDetailModal');
-  if (modal) {
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
+  if (svc.detailUrl) {
+    window.location.href = svc.detailUrl;
+  } else if (svc.link) {
+    window.location.href = svc.link;
   }
 }
 
-// Close Modal
-function closeServiceModal() {
-  const modal = document.getElementById('serviceDetailModal');
-  if (modal) {
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
-}
-
-function handleModalBackdropClick(event) {
-  if (event.target.id === 'serviceDetailModal') {
-    closeServiceModal();
-  }
-}
