@@ -683,6 +683,28 @@ body {
   gap: 12px;
 }
 
+.btn-modal-detail {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 12px 18px;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: all var(--transition-smooth);
+}
+
+.btn-modal-detail:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
 .btn-modal-contact {
   flex: 1;
   display: inline-flex;

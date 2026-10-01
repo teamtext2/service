@@ -216,6 +216,16 @@ function openServiceDetail(serviceId) {
     linkBtn.href = svc.link || `mailto:hi@spac2.com?subject=Inquiry%20${encodeURIComponent(svc.title)}`;
   }
 
+  const detailBtn = document.getElementById('modalDetailPageLink');
+  if (detailBtn) {
+    if (svc.detailUrl) {
+      detailBtn.href = svc.detailUrl;
+      detailBtn.style.display = 'inline-flex';
+    } else {
+      detailBtn.style.display = 'none';
+    }
+  }
+
   const featuresContainer = document.getElementById('modalFeatures');
   if (featuresContainer) {
     featuresContainer.innerHTML = (svc.features || []).map(f => `

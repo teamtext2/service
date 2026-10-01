@@ -11,6 +11,7 @@ const SPAC2_SERVICES = [
     img: "email",
     desc: "Lifetime business email solution with zero monthly fees. Send and receive custom branded emails (@yourcompany.com) directly inside your familiar Gmail interface.",
     link: "mailto:hi@spac2.com?subject=Inquiry%20Spac2%20Mail%20Service",
+    detailUrl: "mail/",
     category: "email",
     badge: "Lifetime — No Monthly Fee",
     price: "One-time payment",
