@@ -120,6 +120,19 @@ const SPAC2_SERVICE_ICONS = {
     </defs>
   </svg>`,
 
+  bio: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="48" height="48" rx="14" fill="url(#grad_bio)"/>
+    <circle cx="24" cy="18" r="6" stroke="#ffffff" stroke-width="2.2"/>
+    <path d="M13 36C13 30.5 17.5 27 24 27C30.5 27 35 30.5 35 36" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="34" cy="14" r="3" fill="#EC4899"/>
+    <defs>
+      <linearGradient id="grad_bio" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#DB2777"/>
+        <stop offset="1" stop-color="#9333EA"/>
+      </linearGradient>
+    </defs>
+  </svg>`,
+
   default: `<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="48" height="48" rx="14" fill="url(#grad_def)"/>
     <circle cx="24" cy="24" r="10" stroke="#ffffff" stroke-width="2.2"/>

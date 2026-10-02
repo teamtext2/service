@@ -43,6 +43,25 @@ const SPAC2_SERVICES = [
       "Google Search Console & Bing Search indexing setup",
       "100% full source code and data ownership handover"
     ]
+  },
+  {
+    id: "bio-cv",
+    title: "Personal Bio CV Page",
+    img: "bio",
+    desc: "Custom personal Bio CV page with customized UI coding, free default Spac2 domain, PWA support, multi-platform search indexing, and AI bot search ready on global CDN.",
+    link: "mailto:hi@spac2.com?subject=Inquiry%20Personal%20Bio%20CV%20Service",
+    detailUrl: "bio/",
+    category: "bio",
+    badge: "Personal Bio & PWA",
+    price: "Custom quotation",
+    features: [
+      "Free default Spac2 subdomain or custom domain option",
+      "Multi-platform search indexing (Google, Bing, Coc Coc)",
+      "Global CDN zero latency and structured data for AI search bots",
+      "100% tailored UI/UX according to your design specifications",
+      "PWA installation support on mobile devices",
+      "Visitor traffic measurement and analytics support"
+    ]
   }
 ];
 
