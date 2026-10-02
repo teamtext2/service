@@ -140,8 +140,25 @@ function getServiceSvg(imgKey) {
   return SPAC2_SERVICE_ICONS[imgKey] || SPAC2_SERVICE_ICONS.default;
 }
 
+// Theme Management
+function initSpac2Theme() {
+  const savedTheme = localStorage.getItem('spac2-theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+
+  document.querySelectorAll('.btn-theme-toggle').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('spac2-theme', newTheme);
+    });
+  });
+}
+
 // App Initialization
 document.addEventListener('DOMContentLoaded', () => {
+  initSpac2Theme();
   renderServicesList();
 });
 
@@ -186,9 +203,9 @@ function renderServicesList() {
         </div>
 
         <div class="card-bottom-row">
-          <span class="card-price-tag">${svc.price || 'Contact us'}</span>
+          <span class="card-action-hint">Standard Solution</span>
           <span class="btn-card-action">
-            <span>Details</span>
+            <span>Explore Service</span>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="9 18 15 12 9 6"></polyline>
             </svg>

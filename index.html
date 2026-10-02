@@ -123,18 +123,21 @@
 </head>
 
 <body>
+  <!-- Header Ambient Backdrop Overlay -->
+  <div class="header-backdrop-overlay" aria-hidden="true"></div>
+
   <!-- Ambient Space Glow Layer -->
   <div class="ambient-glow-layer" aria-hidden="true">
     <div class="glow-orb glow-blue"></div>
     <div class="glow-orb glow-purple"></div>
   </div>
 
-  <!-- App Floating Header Dock -->
+  <!-- Floating Header Navigation Dock -->
   <header class="app-floating-header">
     <div class="app-header-capsule">
       <!-- Left: Back Button + Logo + Spac2 | Services -->
       <div class="app-header-left">
-        <a href="https://spac2.com/" class="btn-back" title="Back to Spac2 Home" aria-label="Back to Spac2">
+        <a href="https://spac2.com/" class="btn-back" title="Về Spac2 Home" aria-label="Back to Spac2">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
             stroke-linecap="round" stroke-linejoin="round">
             <line x1="19" y1="12" x2="5" y2="12"></line>
@@ -142,7 +145,7 @@
           </svg>
         </a>
 
-        <a href="/" class="brand-link" title="Spac2 Services">
+        <a href="/" class="brand-link" title="Spac2 Services Portal">
           <div class="brand-logo-card">
             <img src="https://spac2.com/apple-touch-icon.png" alt="Spac2 Logo" class="brand-logo-img"
               onerror="this.src='https://spac2.com/favicon.ico'" />
@@ -155,16 +158,8 @@
         </a>
       </div>
 
-      <!-- Right: Fast Action Contact -->
-      <div class="app-header-right">
-        <a href="mailto:hi@spac2.com?subject=Inquiry%20Spac2%20Services" class="btn-header-action" title="Contact Us">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-            <polyline points="22,6 12,13 2,6"></polyline>
-          </svg>
-          <span>Contact</span>
-        </a>
-      </div>
+      <!-- Right Side -->
+      <div class="app-header-right"></div>
     </div>
   </header>
 
@@ -183,6 +178,21 @@
     <!-- Services Dynamic Grid -->
     <div class="services-app-grid" id="servicesGrid">
       <!-- Dynamic render from list-service.js & data/js/service.js -->
+    </div>
+
+    <!-- Bottom Consultation CTA Banner -->
+    <div class="app-bottom-cta-banner">
+      <div class="cta-banner-text">
+        <h3 class="cta-banner-title">Need custom technology solutions?</h3>
+        <p class="cta-banner-desc">Contact our team directly for detailed consultation and standard project quotation.</p>
+      </div>
+      <a href="mailto:hi@spac2.com?subject=Inquiry%20Spac2%20Services" class="btn-bottom-cta" title="Contact Us">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        <span>Contact Us</span>
+      </a>
     </div>
 
     <!-- Mini Footer -->
@@ -211,7 +221,6 @@
         <div class="modal-detail-icon" id="modalIcon"></div>
         <div>
           <h2 class="modal-detail-title" id="modalTitle">Service Title</h2>
-          <div class="modal-detail-price" id="modalPrice">Pricing</div>
         </div>
       </div>
 
