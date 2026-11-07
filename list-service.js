@@ -28,39 +28,43 @@ const SPAC2_SERVICES = [
     id: "web-design",
     title: "Website Design & Development",
     img: "website",
-    desc: "Bespoke corporate websites and high-speed PWAs built on global CDN with DDoS defense. Includes free lifetime business email, SEO indexing setup, and 100% source code ownership.",
+    desc: "Bespoke corporate websites and high-speed PWAs with a dedicated custom Admin Dashboard built directly on your site. Full unrestricted control over all content, one-time payment with lifetime ownership, free business email, and 100% source code handover.",
     link: "mailto:hi@spac2.com?subject=Inquiry%20Web%20Development",
     detailUrl: "web/",
     category: "website",
-    badge: "PWA & CDN Powered",
+    badge: "PWA & Admin Dashboard",
     price: "From $150 / project",
     features: [
       "Custom UI/UX from any design format (PNG, PDF, Figma, HTML demo)",
+      "Dedicated Custom Admin Dashboard: Tailored directly to your website for 100% unrestricted management of all pages, content, and data",
+      "One-time payment with lifetime ownership — zero monthly fees or recurring subscriptions",
+      "Unrestricted adjustments & full customization of all components without limitations",
       "Standard PWA installable web app with optional offline support",
-      "Global CDN high-speed delivery with enterprise DDoS defense",
-      "Unlimited traffic and bandwidth capacity",
+      "Global CDN high-speed delivery with enterprise DDoS defense & unlimited traffic",
       "1 Free Lifetime Business Email included (@yourcompany.com)",
-      "Google Search Console & Bing Search indexing setup",
-      "100% full source code and data ownership handover"
+      "Dedicated technical support & rich extensible feature modules upon request",
+      "Google Search Console & Bing Search indexing setup with 100% source code handover"
     ]
   },
   {
     id: "bio-cv",
     title: "Personal Bio CV Page",
     img: "bio",
-    desc: "Custom personal Bio CV page with customized UI coding, free default Spac2 domain, PWA support, multi-platform search indexing, and AI bot search ready on global CDN.",
+    desc: "Custom personal Bio CV page with a dedicated Admin Dashboard built directly on your bio design. Manage all links, profile info, and portfolio unrestricted with one-time payment, lifetime ownership, free default Spac2 domain, PWA, and global CDN.",
     link: "mailto:hi@spac2.com?subject=Inquiry%20Personal%20Bio%20CV%20Service",
     detailUrl: "bio/",
     category: "bio",
-    badge: "Personal Bio & PWA",
+    badge: "Bio & Admin Dashboard",
     price: "Custom quotation",
     features: [
-      "Free default Spac2 subdomain or custom domain option",
-      "Multi-platform search indexing (Google, Bing, Coc Coc)",
-      "Global CDN zero latency and structured data for AI search bots",
-      "100% tailored UI/UX according to your design specifications",
-      "PWA installation support on mobile devices",
-      "Visitor traffic measurement and analytics support"
+      "Dedicated Custom Admin Dashboard: Tailored directly to your Bio design for 100% unrestricted management of all links, profile info, and media",
+      "One-time payment with lifetime ownership — zero recurring monthly subscription fees",
+      "Unrestricted adjustments & full customization of all components without limitations",
+      "Free default Spac2 subdomain or custom domain setup option",
+      "Multi-platform search indexing (Google, Bing, Coc Coc) & AI search bot ready",
+      "Global CDN zero latency delivery and PWA mobile app support",
+      "100% tailored UI/UX according to your personal branding and design preferences",
+      "Dedicated technical support, rich custom widgets, and direct 1-on-1 consultation"
     ]
   }
 ];
