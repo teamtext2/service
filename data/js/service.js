@@ -155,7 +155,8 @@ function getServiceSvg(imgKey) {
 
 // Theme Management
 function initSpac2Theme() {
-  const savedTheme = localStorage.getItem('spac2-theme') || 'dark';
+  const defaultTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+  const savedTheme = localStorage.getItem('spac2-theme') || defaultTheme;
   document.documentElement.setAttribute('data-theme', savedTheme);
 
   document.querySelectorAll('.btn-theme-toggle').forEach(btn => {

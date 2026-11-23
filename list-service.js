@@ -26,24 +26,23 @@ const SPAC2_SERVICES = [
   },
   {
     id: "web-design",
-    title: "Website Design & Development",
+    title: "Website & Web App Development",
     img: "website",
-    desc: "Bespoke corporate websites and high-speed PWAs with a dedicated custom Admin Dashboard built directly on your site. Full unrestricted control over all content, one-time payment with lifetime ownership, free business email, and 100% source code handover.",
+    desc: "All types of websites & installable PWAs with limitless UI/UX design, Edge Server speed (unlimited traffic), 3–7 day handover, one-time payment with zero monthly fees, and an optional exclusive Admin Dashboard at a very low add-on cost.",
     link: "mailto:hi@spac2.com?subject=Inquiry%20Web%20Development",
     detailUrl: "web/",
     category: "website",
-    badge: "PWA & Admin Dashboard",
+    badge: "3–7 Days · One-Time Pay",
     price: "From $150 / project",
     features: [
-      "Custom UI/UX from any design format (PNG, PDF, Figma, HTML demo)",
-      "Dedicated Custom Admin Dashboard: Tailored directly to your website for 100% unrestricted management of all pages, content, and data",
-      "One-time payment with lifetime ownership — zero monthly fees or recurring subscriptions",
-      "Unrestricted adjustments & full customization of all components without limitations",
-      "Standard PWA installable web app with optional offline support",
-      "Global CDN high-speed delivery with enterprise DDoS defense & unlimited traffic",
-      "1 Free Lifetime Business Email included (@yourcompany.com)",
-      "Dedicated technical support & rich extensible feature modules upon request",
-      "Google Search Console & Bing Search indexing setup with 100% source code handover"
+      "Limitless UI/UX: Custom-designed from scratch, templates, or your samples (all web apps & PWA)",
+      "Exclusive Dedicated Admin Dashboard: Separate per website (never shared), very low add-on fee",
+      "One-time payment — zero monthly hosting fees (only annual domain renewal)",
+      "Edge Server & Global CDN: Unlimited traffic & queries, speed check before handover",
+      "Fast 3–7 day handover with full revisions; affordable post-handover edits",
+      "Legally compliant domain in your name, annual renewal support & VAT invoices (incl. Google Workspace)",
+      "Free Business Email included when registering a domain with Spac2",
+      "Core worker.js retained by Spac2 for security & partner safety"
     ]
   },
   {
